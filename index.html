@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Event Handling Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>JavaScript Event Handling & Interactive Elements</h1>
+
+  <!-- Light/Dark Mode Toggle -->
+  <section>
+    <h2>Light/Dark Mode</h2>
+    <button id="themeToggle">Toggle Dark Mode</button>
+  </section>
+
+  <!-- Counter Game -->
+  <section>
+    <h2>Counter Game</h2>
+    <p>Score: <span id="counter">0</span></p>
+    <button id="increaseBtn">Increase</button>
+    <button id="resetBtn">Reset</button>
+  </section>
+
+  <!-- Collapsible FAQ -->
+  <section>
+    <h2>FAQ</h2>
+    <div class="faq-item">
+      <button class="faq-question">What is JavaScript?</button>
+      <div class="faq-answer">JavaScript is a programming language that makes websites interactive.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">What is DOM?</button>
+      <div class="faq-answer">DOM stands for Document Object Model, which represents a web page’s structure.</div>
+    </div>
+  </section>
+
+  <!-- Form Validation -->
+  <section>
+    <h2>Sign Up Form</h2>
+    <form id="signupForm">
+      <label>Name: <input type="text" id="name"></label>
+      <span class="error" id="nameError"></span><br>
+
+      <label>Email: <input type="text" id="email"></label>
+      <span class="error" id="emailError"></span><br>
+
+      <label>Password: <input type="password" id="password"></label>
+      <span class="error" id="passwordError"></span><br>
+
+      <button type="submit">Sign Up</button>
+    </form>
+    <p id="formSuccess" class="success"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
